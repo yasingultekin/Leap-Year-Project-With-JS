@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./images/asd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: black;
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+.JS, .Gh {
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: .9;
+    cursor: pointer;
+}
+.JS div img, .Gh div img {
+    padding-right: 10px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 50%;
+    transform: translateY(-70px);
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-size: 1.3rem;
+    word-wrap: normal;
+    width: 70%;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.content .input {
+    margin-top: 15px;
+}
+
+.content .input input {
+    width: 115px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    background: inherit;
+    outline: 2px solid black;
+    text-align: center;
+
+}
+
+::placeholder {
+    color: black;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (max-height:400px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    .top {
+        align-items: center;
+        flex-direction: column;
+    }
+    .content {
+        margin-top: 100px;
+    }
+}
